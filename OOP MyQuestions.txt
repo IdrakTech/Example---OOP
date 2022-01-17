@@ -1,0 +1,29 @@
+						-*-	Research -*-
+
+1.About arrays
+	a. static
+	b. dynamic
+	
+
+2. NULLPTR(nullptr)
+
+
+3. understood methods "void addTask"
+	
+	void addTask(Task task)
+	{
+		Task* temp = new Task[taskCount + 1];
+		for (int i = 0; i < taskCount; i++)
+		{
+			temp[i] = tasks[i];
+		}
+		delete[] tasks;
+		tasks = temp;
+		tasks[taskCount] = task;
+		taskCount++;
+	}
+	
+
+4. cin function
+	a. cin.ignore()
+	b. cin.get()

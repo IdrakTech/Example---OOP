@@ -1,0 +1,15 @@
+class Rectangle 
+
+fields:
+	left
+	top
+	right
+	bottom
+	
+	
+methods:
+		int Width(); // ширина прямоугольника
+		int Height(); // высота прямоугольника
+		bool IsRectNull(); // возврат истину, если все параметры = 0
+		bool PtInRect(int x, int y); // возврат истину, если точка лежит внутри 
+	void Draw();
